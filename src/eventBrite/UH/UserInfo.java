@@ -3,11 +3,15 @@ package eventBrite.UH;
 public class UserInfo{
 
 	private String uName; 
-	private String pWord;
+	private String fName;
+	private String lName;
+	private char pWord;
 
-public UserInfo(String username, String password) { //constructor
+public UserInfo(String username, String firstname, String lastname, char password) { //constructor
 
 		uName = username;
 		pWord = password;
+		fName = firstname;
+		lName = lastname;
 	}
 }
