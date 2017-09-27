@@ -1,4 +1,4 @@
-package eventBrite.UH;
+package eventBrite.UH.EventApp;
 
 import java.util.ArrayList;
 import java.util.Arrays;
