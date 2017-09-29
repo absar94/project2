@@ -1,4 +1,6 @@
-package eventBrite.UH;
+package eventBrite.UH.EventApp;
+
+import eventBrite.UH.EventCreate.EventCreate;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,7 +23,7 @@ public class Main {
         System.out.println();
         System.out.println("please input the feature you want to perform");
 
-        int select = selectFeature.nextInt();
+        int select = Integer.parseInt(selectFeature.nextLine());
 
         switch (featureList.get(select))
         {
@@ -36,6 +38,8 @@ public class Main {
             case "create event":
                 System.out.println("you started "+featureList.get(select));
                 // instantiate and call feature class here
+                EventCreate eCreate = new EventCreate(selectFeature);
+                eCreate.createEvent();
                 break;
         }
 
