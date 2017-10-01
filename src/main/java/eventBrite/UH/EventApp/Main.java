@@ -1,7 +1,7 @@
 package eventBrite.UH.EventApp;
 
 import eventBrite.UH.EventCreate.EventCreate;
-
+import eventBrite.UH.UserAccount.SignUp;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
