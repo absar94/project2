@@ -1,4 +1,4 @@
-package eventBrite.UH;
+package eventBrite.UH.UserAccount;
 
 public class UserInfo{
 
