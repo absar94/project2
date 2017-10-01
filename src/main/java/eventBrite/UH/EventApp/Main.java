@@ -1,6 +1,7 @@
 package eventBrite.UH.EventApp;
 
 import eventBrite.UH.EventCreate.EventCreate;
+import eventBrite.UH.UserAccount.SignUp;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,6 +31,8 @@ public class Main {
             case "create user account":
                 System.out.println("you started "+featureList.get(select));
                 // instantiate and call feature class here
+                Signup eCreate = new SignUp(selectFeature);
+            
                 break;
             case "login":
                 System.out.println("you started "+featureList.get(select));
