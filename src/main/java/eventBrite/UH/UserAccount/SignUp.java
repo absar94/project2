@@ -4,7 +4,7 @@ import eventBrite.UH.UserAccount.UserInfo;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Signin{
+public class SignUp {
   public static void SignupPage(){
         
         Scanner in = new Scanner(System.in);

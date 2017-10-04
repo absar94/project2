@@ -14,35 +14,35 @@ public UserInfo(String username, String firstname, String lastname, char passwor
 		fName = firstname;
 		lName = lastname;
 	}
-public String getUsername{
+    public String getUsername (){
 	return fName;
 }
 
-public char getPassword{
+    public char getPassword(){
 	return pWord;
 }
 	
-public String getFirstname{
+    public String getFirstname(){
 	return fName;
 }
 	
-public String getLastname{
+    public String getLastname(){
 	return lName;
 }
 	
-public void setUsername(fName){
+public void setUsername(String fName){
 	this.fName = fName;
 }
 	
-public void setPassword(pWord){
+public void setPassword(char  pWord){
 	this.pWord = pWord;
 }
 
-public void setFirstname(fName){
+public void setFirstname(String fName){
 	this.fName = fName;
 }
 	
-public void setLastname(lName){
+public void setLastname(String lName){
 	this.lName = lName;
 }
 }
