@@ -1,7 +1,8 @@
 package eventBrite.UH.EventJoin;
-import eventBrite.UH.EventCreate.EventInfo;
-import eventBrite.UH.EventTools.EventTypes.TicketType;
 
+import eventBrite.UH.EventCreate.EventInfo;
+import eventBrite.UH.EventTools.MailNotifier;
+import eventBrite.UH.EventTools.EventTypes.TicketType;
 
 public class RegistrationForm  
 {
@@ -58,13 +59,11 @@ public class RegistrationForm
 
 		private boolean setEmailAddress(String newEmailAddress) 
 		{
-			final String EMAIL_REGEX = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
-			if (newEmailAddress.matches(EMAIL_REGEX)) 
-			{
-			 	emailAddress = newEmailAddress;
-			 	return true;
-			} 
-			return false;
+			boolean ret;
+			ret = MailNotifier.checkEmailAddressFormat(newEmailAddress);
+			if (ret)
+				emailAddress = newEmailAddress;
+			return ret;
 		}
 
 		private boolean setCellPhone(String newCellPhone) 
