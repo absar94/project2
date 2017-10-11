@@ -12,15 +12,15 @@ public class MailNotifier
 	private String emailSubject;	
 	private String emailMessage;
 	private boolean senderInfoSet;
-	private boolean readyToSend;
+	private boolean emailInfoSet;
 
 	public MailNotifier()
 	{
 		senderInfoSet 	= false;
-		readyToSend		= false;
+		emailInfoSet		= false;
 	}
 
-	public boolean isReadyToSend() {return readyToSend;}
+	public boolean isReadyToSend() {return (senderInfoSet & emailInfoSet);}
 
 	public int setSenderInfo(String senderGmail, String password)
 	{
@@ -28,7 +28,7 @@ public class MailNotifier
 		{
 			fromEmail 		= senderGmail;
 			this.password 	= password;
-			senderInfoSet = true;
+			senderInfoSet 	= true;
 			return 0;
 		}
 		return -1;
@@ -41,8 +41,7 @@ public class MailNotifier
 			toEmail	= receiverGmail;
 			this.emailSubject = emailSubject;
 			this.emailMessage = emailMessage;
-			if(senderInfoSet) 
-				readyToSend = true;
+			emailInfoSet = true;
 			return 0;
 		}
 		return -1;
