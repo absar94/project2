@@ -1,4 +1,4 @@
-package eventBrite.UH.UserLogin;
+package eventBrite.UH.UserLogin.UserLogin;
 package eventBrite.UH.UserAccount.SignUp;
 package eventBrite.UH.UserAccount.UserInfo;
 import java.util.Scanner;
@@ -20,8 +20,8 @@ public class UserLogin {
     
       System.out.println("++++++++++++++++++++");
         
-       if(check.auth()) 
-        System.out.println("You are logged in");
+       //if(check.auth()) 
+      //  System.out.println("You are logged in");
 
 
     
